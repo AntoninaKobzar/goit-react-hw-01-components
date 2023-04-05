@@ -1,0 +1,102 @@
+.profile {
+    width: 300px; 
+    background-color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgb(192, 189, 189);
+    border-radius: 2%;
+    margin: 0;
+}
+.description {
+    display: flex;
+    padding: 25px 36px 0 36px;
+    margin: 0;
+    flex-direction: column; 
+    align-items: center;
+    
+}
+.avatar{
+    width: 120px;
+    display: flex;
+    border-radius: 50%;
+    background-color: blanchedalmond;
+}
+.name{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+.tag{
+    font-size: 14px;
+    margin-bottom: 0;
+    font-family: 'Trebuchet MS',
+        'Lucida Sans Unicode',
+        'Lucida Grande',
+        'Lucida Sans',
+        Arial,
+        sans-serif;
+    color: rgb(77, 74, 74);
+    line-height: 1.5;
+    
+}
+.location{
+    font-size: 14px;
+    margin-bottom: 25px;
+    font-family: 'Trebuchet MS',
+        'Lucida Sans Unicode',
+        'Lucida Grande',
+        'Lucida Sans',
+        Arial,
+        sans-serif;
+    color: rgb(77, 74, 74);
+    line-height: 1.5;
+    height: 16px;
+}
+.stats{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.statsItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:1px solid rgb(188, 207, 207);
+    background-color: rgb(231, 240, 248);
+    padding: 16px;
+    width:66px;
+    
+}
+.label{
+    display: flex;
+    font-family: 'Trebuchet MS',
+        'Lucida Sans Unicode',
+        'Lucida Grande',
+        'Lucida Sans',
+        Arial,
+        sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgb(77, 74, 74);
+}
+.quantity{
+    display: flex;
+    font-family: 'Trebuchet MS',
+        'Lucida Sans Unicode',
+        'Lucida Grande',
+        'Lucida Sans',
+        Arial,
+        sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+} 
