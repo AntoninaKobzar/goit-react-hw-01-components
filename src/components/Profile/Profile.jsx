@@ -1,9 +1,10 @@
 
+import React from 'react';
 import PropTypes from 'prop-types';
 import css from './Profile.module.css';
-import user from 'components/user.json';
+import user from './user.json';
 
-export const Profile = ({username, tag, location, avatar, stats,}) => {
+const Profile = ({username, tag, location, avatar, stats,}) => {
     return(
     <div className={css.profile}>
         <div className={css.description}>
@@ -43,3 +44,4 @@ Profile.propTypes = {
     
     
 }
+export default Profile;
