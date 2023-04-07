@@ -9,7 +9,7 @@ const FriendList = (props) => {
     return (
         <ul className={css.list}>
             {friends.map((friend) => {
-                return <FriendListItem id={friend.id}{...friend} />;
+                return <FriendListItem key={friend.id}{...friend} />;
             })}
 </ul>
             );

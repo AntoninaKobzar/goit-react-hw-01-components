@@ -18,6 +18,6 @@ FriendListItem.propTypes = {
     id: PropTypes.number,
     name: PropTypes.string,
     isOnline: PropTypes.bool,
-    avatar:PropTypes.object,
+    avatar:PropTypes.string,
 }
 export default FriendListItem;

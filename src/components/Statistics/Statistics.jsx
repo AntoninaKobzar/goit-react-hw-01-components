@@ -12,7 +12,7 @@ const Statistics = (props) => {
             <ul className={css.stats}>
 
                 {data.map((item) => {
-                    return <Stats id={item.id}{...item} />;
+                    return <Stats key={item.id}{...item} />;
                     })}
             </ul>    
         </div>

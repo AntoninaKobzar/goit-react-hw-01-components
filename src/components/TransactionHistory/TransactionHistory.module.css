@@ -1,0 +1,22 @@
+.transaction{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+.header{
+    width: 600px;
+    background-color: rgb(46, 204, 243);
+    color: white;
+
+    
+}
+
+.withdrawal{
+    background-color: rgb(218, 212, 212);
+    
+}
+td, th{
+    text-align:center;
+    width: 200px;
+    border: 1px solid white;
+}
