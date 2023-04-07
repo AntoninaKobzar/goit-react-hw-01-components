@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import css from './Profile.module.css';
 import user from './user.json';
 
-
 const Profile = ({username, tag, location, avatar, stats,}) => {
     return(
     <div className={css.profile}>
