@@ -1,0 +1,43 @@
+.list{
+    width: 350px;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 10px;
+    list-style: none;
+    height: 75px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),0 0 0 2px rgb(255, 255, 255),
+            0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
+}
+.status{
+    display: flex;
+    margin-right: 10px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+.true{
+    background-color: green;
+}
+.false{
+    background-color: red;
+}
+.avatar{
+    background-color: rgb(151, 144, 41);
+    width:70px;
+    border: 1px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.name{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 1.5;
+            margin-top: 25px;
+}

@@ -8,7 +8,8 @@ const Stats = ({id,label,percentage,}) => {
             <li className={css.item} id={id}>
                 <span className={css.label}>{label}</span>
                 <span className={css.percentage}>{percentage}%</span>
-            </li>       
+        </li>
+        
     );
 };
 Stats.propTypes = {
