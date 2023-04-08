@@ -3,18 +3,17 @@ import css from './Statistics.module.css';
 import PropTypes from 'prop-types';
 
 
-const Stats = ({id,label,percentage,}) => {
+const Stats = ({label,percentage,}) => {
     return (
-            <li className={css.item} id={id}>
+            <li className={css.item}>
                 <span className={css.label}>{label}</span>
                 <span className={css.percentage}>{percentage}%</span>
-        </li>
+            </li>
         
     );
 };
 Stats.propTypes = {
-    id: PropTypes.string,
-    label: PropTypes.string,
-    percentage: PropTypes.number,
-    }
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+};
 export default Stats;

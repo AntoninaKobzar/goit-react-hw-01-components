@@ -2,25 +2,32 @@ import React from 'react';
 import css from './TransactionHistory.module.css';
 import PropTypes from 'prop-types';
 
-const TransactionItems = ({ id, type, amount, currency, }) => {
-    return (
+const TransactionItems = ({type, amount, currency,}) => {
+    return (<table className={css.transaction}>
+            <thead className={css.header}>
+                <tr>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th>Currency</th>
+                </tr>
+            </thead>
             <tbody className={css.body}>
                 <tr className={css.invoice}>
-                    <td>Invoice</td>
-                    <td>125</td>
-                    <td>USD</td>
+                    <td>{{type}}</td>
+                <td>{amount}</td>
+                <td>{currency}</td>
                 </tr>
                 <tr className={css.withdrawal}>
-                    <td>Withdrawal</td>
-                    <td>85</td>
-                    <td>USD</td>
+                <td>{type}</td>
+                    <td>{amount}</td>
+                    <td>{currency}</td>
                 </tr>
         </tbody>
+        </table>
     );
 };
 
 TransactionItems.propTypes = {
-    id: PropTypes.string,
     type: PropTypes.string,
     amount: PropTypes.string,
     currency:PropTypes.string,
