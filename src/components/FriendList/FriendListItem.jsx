@@ -1,6 +1,6 @@
 import React from 'react';
 import css from './FriendList.module.css';
-import PropTypes, { bool } from 'prop-types';
+import PropTypes from 'prop-types';
 
 
 const FriendListItem = ({avatar, name, isOnline, id,}) => {
