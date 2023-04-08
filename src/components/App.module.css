@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(225, 233, 238);
+}
+.app_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
