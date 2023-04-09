@@ -2,6 +2,15 @@
 import css from './Statistics.module.css';
 import PropTypes from 'prop-types';
 
+function generateRandomColor() {
+    let color = '#';
+    for (let i = 0; i < 3; i++)
+    color += (
+      '0' + Math.floor((Math.random() * Math.pow(16, 2)) / 2).toString(16)
+    ).slice(-2);
+    return color;
+}
+
 
 const Statistics = ({title,stats}) => (
         <div className={css.statistics}> 
@@ -9,7 +18,9 @@ const Statistics = ({title,stats}) => (
             
             <ul className={css.stats}>
                 {stats.map(({id,label,percentage}) => (
-                <li className={css.item} key={id}>
+                <li className={css.item} style={{
+            backgroundColor: generateRandomColor(),
+        }} key={id}>
                 <span className={css.label}>{label}</span>
                 <span className={css.percentage}>{percentage}%</span>
                 </li> 

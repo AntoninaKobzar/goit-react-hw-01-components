@@ -1,50 +1,42 @@
 .statistics {
-    display: flex;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid gray;
-    width: 280px;
+    width: 300px;
+    margin:0 auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    overflow: hidden; 
 }
 
 .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 22px;
-    font-family: 'Lucida Sans';
-    color: rgb(77, 74, 74);
-    line-height: 1.5;
+    padding: 25px 0;
+    color: #4f585e;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase
 }
 
 .stats {
     display: flex;
-    height: 75px;
-    width: 280px;
-    list-style: none;
-    margin: 0;
+    justify-content: center;
+    align-items: center;
     padding: 0;
 }
 .label {
-    font-size: 14px;
-    font-family: 'Lucida Sans';
-    color: rgb(77, 74, 74);
-    line-height: 1.5;
+    margin-bottom: 5px;
+    font-size: 0.7rem;
 }
 
 .percentage {
-    font-size: 18px;
-    font-family: 'Arial',sans-serif;
-    color: rgb(77, 74, 74);
-    line-height: 1.5;
+    font-size: 1.2rem;
 }
 
 .item{
-display: flex;
-width: 70px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    text-align: center;
+    color: #ffffff;
 }
