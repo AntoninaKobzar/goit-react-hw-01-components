@@ -1,36 +1,36 @@
 
 import css from './Statistics.module.css';
-import Stats from './Stats';
 import PropTypes from 'prop-types';
-let title = "Upload stats";
 
-const Statistics = ({data}) => {
-    return (
+
+const Statistics = ({title,stats}) => (
         <div className={css.statistics}> 
             {title && <h2 className={css.title}>{title}</h2>}
+            
             <ul className={css.stats}>
-                {data?.map((item) => (
-                    <Stats
-                        key={item.id}
-                        label={item.label}
-                        percentage={item.percentage}
-                    />
+                {stats.map(({id,label,percentage}) => (
+                <li className={css.item} key={id}>
+                <span className={css.label}>{label}</span>
+                <span className={css.percentage}>{percentage}%</span>
+                </li> 
                 ))}
             </ul>    
         </div>
-            );
+);
+
+Statistics.defaultProps = {
+    title: '',
 };
 
 Statistics.propTypes = {
-    data: PropTypes.arrayOf(
-        PropTypes.shape({
+    title: PropTypes.string,
+    stats: PropTypes.arrayOf(PropTypes.shape({
         id: PropTypes.string.isRequired,
         label: PropTypes.string.isRequired,
-        percentage:PropTypes.number.isRequired,
-        }),
-    ),
-    title: PropTypes.string,
-    };
+        percentage: PropTypes.number.isRequired,
+    }),
+    ).isRequired,
+};
     
     
 export default Statistics;
