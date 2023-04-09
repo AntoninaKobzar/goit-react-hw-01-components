@@ -6,7 +6,7 @@ import FriendList from './FriendList/FriendList';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
 import css from './App.module.css';
 import data from './data/data.json';
-import friends from './data/friends.json'
+import friends from './data/friends.json';
 import transactions from './data/transactions.json';
 import user from './data/user.json';
 
@@ -18,10 +18,10 @@ export const App = () => {
             location={user.location}
             avatar={user.avatar}
             stats={user.stats}/>
-      <Statistics title="Upload stats" stats={data} />
+      {/* <Statistics title= "Upload stats" stats={data} /> */}
       <Statistics stats={data} />
-      <FriendList friends={friends} />;
-      <TransactionHistory items={transactions} />;
+      <FriendList friends={friends} />
+      <TransactionHistory transactions={transactions} />
     </div>  
   );
 };
