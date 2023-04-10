@@ -24,7 +24,7 @@
     background-color: blanchedalmond;
 }
 .name{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Lucida Sans', Arial, sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.5;
@@ -34,9 +34,7 @@
 .tag{
     font-size: 14px;
     margin-bottom: 0;
-    font-family: 'Trebuchet MS',
-        'Lucida Sans Unicode',
-        'Lucida Grande',
+    font-family:
         'Lucida Sans',
         Arial,
         sans-serif;
@@ -47,9 +45,7 @@
 .location{
     font-size: 14px;
     margin-bottom: 25px;
-    font-family: 'Trebuchet MS',
-        'Lucida Sans Unicode',
-        'Lucida Grande',
+    font-family:
         'Lucida Sans',
         Arial,
         sans-serif;
@@ -65,7 +61,7 @@
     padding: 0;
     margin: 0;
 }
-.statsItem{
+.item{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,9 +74,7 @@
 }
 .label{
     display: flex;
-    font-family: 'Trebuchet MS',
-        'Lucida Sans Unicode',
-        'Lucida Grande',
+    font-family:
         'Lucida Sans',
         Arial,
         sans-serif;
@@ -90,9 +84,7 @@
 }
 .quantity{
     display: flex;
-    font-family: 'Trebuchet MS',
-        'Lucida Sans Unicode',
-        'Lucida Grande',
+    font-family:
         'Lucida Sans',
         Arial,
         sans-serif;

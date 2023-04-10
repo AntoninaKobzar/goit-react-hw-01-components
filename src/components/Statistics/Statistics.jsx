@@ -1,6 +1,6 @@
 
-import css from './Statistics.module.css';
 import PropTypes from 'prop-types';
+import css from './Statistics.module.css';
 
 function generateRandomColor() {
     let color = '#';
@@ -17,10 +17,13 @@ const Statistics = ({title,stats}) => (
             {title && <h2 className={css.title}>{title}</h2>}
             
             <ul className={css.stats}>
-                {stats.map(({id,label,percentage}) => (
-                <li className={css.item} style={{
-            backgroundColor: generateRandomColor(),
-        }} key={id}>
+            {stats.map(({ id, label, percentage }) => (
+                <li
+                    className={css.item} style={{
+                        backgroundColor: generateRandomColor(),
+                    }}
+                    key={id}
+                >
                 <span className={css.label}>{label}</span>
                 <span className={css.percentage}>{percentage}%</span>
                 </li> 
